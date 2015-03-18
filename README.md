@@ -21,8 +21,7 @@ fast numerical algebra operations and "cython". For maximum speed, we recommend
 you to compile yourself the "open blas" library in your own machine. To compile
 the "c" code type
 
-$ cd c/PBP_net
-$ ./compile.sh
+$ cd c/PBP_net ; ./compile.sh
 
 In each folder, "c" and "theano", the python script test_PBP_net.py creates a
 two-hidden-layer neural network with 50 hidden units in each layer and fits a
