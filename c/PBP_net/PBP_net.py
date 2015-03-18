@@ -39,8 +39,8 @@ class PBP_net:
             self.std_X_train[ self.std_X_train == 0 ] = 1
             self.mean_X_train = np.mean(X_train, 0)
         else:
-            self.std_X_train = no.ones(X_train.shape[ 1 ])
-            self.mean_X_train = no.zeros(X_train.shape[ 1 ])
+            self.std_X_train = np.ones(X_train.shape[ 1 ])
+            self.mean_X_train = np.zeros(X_train.shape[ 1 ])
 
         X_train = (X_train - np.full(X_train.shape, self.mean_X_train)) / \
             np.full(X_train.shape, self.std_X_train)
