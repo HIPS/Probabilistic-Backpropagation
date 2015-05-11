@@ -52,6 +52,6 @@ print rmse
 # We compute the test log-likelihood
 
 test_ll = np.mean(-0.5 * np.log(2 * math.pi * (v + v_noise)) - \
-    0.5 * (y_test - m) / (v + v_noise))
+    0.5 * (y_test - m)**2 / (v + v_noise))
 
 print test_ll
