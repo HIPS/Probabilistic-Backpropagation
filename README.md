@@ -1,16 +1,6 @@
 # Probabilistic-Backpropagation
-Implementation in C and Theano of the method Probabilistic Backpropagation for scalable Bayesian inference in deep neural networks.
-
-This is an extended version of the code implementing the probabilistic
-backpropagation (PBP) method described in the paper
-
-Jose Miguel Hernandez-Lobato and Ryan P. Adams. 
-"Probabilistic Backpropagation for Scalable Learning of Bayesian Neural
-Networks" arXiv:1502.05336 [stat.ML], 2015.
-
-The original code has been extended to scale the input to any neuron by the
-square root of the number of incoming connections from other neurons. This
-allows PBP to make accurate predictions in deep neural networks.
+Implementation in C and Theano of the method Probabilistic Backpropagation for
+scalable Bayesian inference in deep neural networks.
 
 There are two folders "c" and "theano" containing implementations of the code
 in "c" and in "theano". The "c" version of the code is between 20 and 4 times
