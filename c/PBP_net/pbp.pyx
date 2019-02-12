@@ -296,7 +296,7 @@ def train_PBP_network(net, x_train, y_train, n_epochs):
         permutation = np.array(np.random.choice(range(x_train.shape[ 0 ]),
             x_train.shape[ 0 ], replace = False), dtype = np.int32)
         net.train_adf(x_train, y_train, permutation)
-        print i
+        print(i)
 
 def map_to_dictionary_PBP_network(net):
 
